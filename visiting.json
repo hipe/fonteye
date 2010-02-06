@@ -19,5 +19,26 @@
       "method":"tarball from http",
       "prune":true
      }
+  ],
+  "list:",[
+    {
+      "name":"ckeditor subset",
+      "source":"./external/ckeditor/",
+      "target":"./ckeditor-subset/",
+      "files": [
+        "LICENSE.html",
+        "ckeditor_basic_source.js",
+        "ckeditor_source.js",
+        "_source/core/*",
+        "config.js",
+        "lang/_languages.js",
+        "lang/cs.js",
+        "lang/en.js",
+        "plugins/uicolor/*",
+        "plugins/div/*",
+        "plugins/link/*",
+        "skins/kama/*"
+      ]
+    }
   ]
 ]

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>fonteye</title>
+  <script src="ckeditor-subset/ckeditor_basic_source.js" type="text/javascript"></script>
+  <link type="text/css" href="css/fonteye-global.css" rel="stylesheet"  />
+</head>
+<body>
+  <div id='main-content'>
+    <form>
+    <p>
+      <textarea cols="80" id="editor-1" name="editor1" rows="10">&lt;p&gt;This is some &lt;strong&gt;sample text&lt;/strong&gt;. You are using &lt;a href="http://ckeditor.com/"&gt;CKEditor&lt;/a&gt;.&lt;/p&gt;</textarea>
+      <script type="text/javascript">
+      //<![CDATA[
+        CKEDITOR.replace( 'editor-1',
+          {
+            extraPlugins : 'uicolor',
+            toolbar :
+            [
+              [ 'Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink' ]
+              //,['UIColor']
+            ]
+          });
+
+      //]]>
+      </script>
+
+    </p>
+    </form>
+   </div>
+</body>
+</html>
