@@ -1,0 +1,3 @@
+[submodule "external/hipe-visiting"]
+	path = external/hipe-visiting
+	url = git@github.com:hipe/hipe-visiting.git

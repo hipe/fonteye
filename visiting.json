@@ -1,0 +1,23 @@
+[ "comments:",                                                              [
+  "see ./external/hipe-visiting/visiting.example.json for an explanation",
+  "of this file."
+                                                                            ],
+  "sources:",[
+     {
+      "name":"ckeditor api docs",
+      "url":
+      "http://download.cksource.com/CKEditor/CKEditor/Nightly%20Build/ckeditor_api_docs.tar.gz",
+      "target":"external/ckeditor-api-docs",
+      "method":"tarball from http",
+      "prune":true
+     },
+     {
+       "name":"ckeditor",
+       "url":
+      "http://download.cksource.com/CKEditor/CKEditor/Nightly%20Build/ckeditor_nightly.tar.gz",
+      "target":"external/ckeditor",
+      "method":"tarball from http",
+      "prune":true
+     }
+  ]
+]
