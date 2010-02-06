@@ -3,22 +3,22 @@
   "of this file."
                                                                             ],
   "sources:",[
-     {
+    {
       "name":"ckeditor api docs",
       "url":
       "http://download.cksource.com/CKEditor/CKEditor/Nightly%20Build/ckeditor_api_docs.tar.gz",
       "target":"external/ckeditor-api-docs",
       "method":"tarball from http",
       "prune":true
-     },
-     {
-       "name":"ckeditor",
-       "url":
+    },
+    {
+      "name":"ckeditor",
+      "url":
       "http://download.cksource.com/CKEditor/CKEditor/Nightly%20Build/ckeditor_nightly.tar.gz",
       "target":"external/ckeditor",
       "method":"tarball from http",
       "prune":true
-     }
+    }
   ],
   "list:",[
     {
@@ -30,14 +30,13 @@
         "ckeditor_basic_source.js",
         "ckeditor_source.js",
         "_source/core/*",
-        "config.js",
-        "lang/_languages.js",
-        "lang/cs.js",
-        "lang/en.js",
-        "plugins/uicolor/*",
-        "plugins/div/*",
-        "plugins/link/*",
-        "skins/kama/*"
+        "_source/themes/*",
+        "_source/skins/kama/*",
+        "_source/lang/_languages.js",
+        "_source/lang/cs.js",
+        "_source/lang/en.js",
+        "_source/plugins/*",
+        "config.js"
       ]
     }
   ]
