@@ -6,3 +6,28 @@
 #main-content {
   margin: 1em;
 }
+.editor-demo {
+  border:4px solid #DDDDDD;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  float:left;
+  margin:1em 0.5em;
+  padding:1em;
+}
+
+.editor-demo h3 {
+  color:#999999;
+  font-family:"Helvetica Neue",Arial,sans-serif;
+  font-size:17pt;
+  font-size-adjust:none;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:bold;
+  letter-spacing:-0.75pt;
+  line-height:22pt;
+  margin-bottom: 10px;
+}
+
+#ckeditor-demo {
+  min-width: 800px;
+}

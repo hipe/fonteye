@@ -574,7 +574,23 @@ CKEDITOR.lang['cs'] =
 		edit				: 'Edit Div', // MISSING
 		remove				: 'Remove Div' // MISSING
   	},
-
+/* begin fonteye modifications */
+  fonteye : {
+    fontFamily: {
+      label : 'Fonteye Písmo',
+      voiceLabel : 'Fonteye Písmo',
+      panelTitle : 'Fonteye Písmo',
+      panelVoiceLabel : 'Volba písma'
+    },
+    fontSize :
+    {
+      label : 'Fonteye Velikost',
+      voiceLabel : 'Fonteye Velikost písma',
+      panelTitle : 'Fonteye Velikost',
+      panelVoiceLabel : 'Volba velikosti písma'
+    }
+  },
+/* end fonteye modification */
 	font :
 	{
 		label : 'Písmo',

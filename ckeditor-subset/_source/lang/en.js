@@ -575,6 +575,24 @@ CKEDITOR.lang['en'] =
 		remove				: 'Remove Div'
   	},
 
+  /* begin fonteye modifications */
+  fonteye : {
+    fontFamily: {
+      label : 'Fonteye Font',
+      voiceLabel : 'Fonteye Font',
+      panelTitle : 'Fonteye Font Name',
+      panelVoiceLabel : 'Select Fonteye font'
+    },
+    fontSize :
+    {
+      label : 'Fonteye Size',
+      voiceLabel : 'Fonteye Size',
+      panelTitle : 'Fonteye Name',
+      panelVoiceLabel : 'Select a Fonteye font size'
+    }
+  },
+  /* end fonteye modification */
+
 	font :
 	{
 		label : 'Font',

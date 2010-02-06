@@ -3,30 +3,64 @@
 <head>
   <title>fonteye</title>
   <script src="./ckeditor-subset/ckeditor_source.js" type="text/javascript"></script>
+
+  <!--  <script type="text/javascript" src="http://use.typekit.com/dyl8dtk.js"></script> -->
+  <!-- <script type="text/javascript">try{Typekit.load();}catch(e){}</script>  -->
+
+
   <link type="text/css" href="./css/fonteye-global.css" rel="stylesheet"  />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 </head>
 <body>
   <div id='main-content'>
-    <form>
-    <p>
-      <textarea cols="80" id="editor-1" name="editor1" rows="10">&lt;p&gt;This is some &lt;strong&gt;sample text&lt;/strong&gt;. You are using &lt;a href="http://ckeditor.com/"&gt;CKEditor&lt;/a&gt;.&lt;/p&gt;</textarea>
-      <script type="text/javascript">
-      //<![CDATA[
-        CKEDITOR.replace( 'editor-1',
-          {
-            extraPlugins : 'uicolor',
-            toolbar :
-            [
-              ['Source','-','Bold', 'Italic','-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink' ]
-              ,['Styles','Div','Format','Font','FontSize']
-            ]
-          });
 
-      //]]>
-      </script>
+    <div id='ckeditor-demo' class='editor-demo'>
+      <h3>ckedit demo</h3>
+      <form>
+      <p>
+        <textarea cols="80" id="editor-1" name="editor1" rows="10">&lt;p&gt;This is some &lt;strong&gt;sample text&lt;/strong&gt;. You are using &lt;a href="http://ckeditor.com/"&gt;CKEditor&lt;/a&gt;.&lt;/p&gt;</textarea>
+        <script type="text/javascript">
+        //<![CDATA[
+          CKEDITOR.replace( 'editor-1',
+            {
+              extraPlugins : 'uicolor',
+              toolbar :
+              [
+                ['Source','FonteyeFontFamily','FonteyeFontSize','Font','FontSize']
+                // 'Styles' 'Div' 'Format' 'Bold' 'Italic' 'NumberedList' 'BulletedList', 'Link', 'Unlink'
+              ]
+            });
 
-    </p>
-    </form>
-   </div>
+        //]]>
+        </script>
+
+      </p>
+      </form>
+    </div> <!-- ckeditor demo -->
+
+    <div id='nicEdit-demo'  class='editor-demo'>
+      <h3>nicedit demo</h3>
+      <div class="menu"></div>
+
+      <div class="intro">
+
+        <p class="nudista">Tohle je Nudista přes class nudista</p>
+        <p class="apertura">Tohle je Apertura</p>
+        <p style="font-family:nudista-web-1,nudista-web-2;">Tohle je Nudista přes CSS style</p>
+
+      </div>
+
+      <div class="sample">
+        <script src="nicEdit/nicEdit.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        bkLib.onDomLoaded(function() {
+          new nicEditor({iconsPath : 'nicEdit/nicEditorIcons.gif'}).panelInstance('area3');
+        });
+        </script>
+        <textarea id="area3" style="width:800px;height:300px;">Lorem Ipsum</textarea>
+      </div>
+    </div><!-- end nicEdit-demo -->
+
+  </div><!-- main content -->
 </body>
 </html>
