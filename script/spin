@@ -1,0 +1,13 @@
+#!/bin/sh
+echo "(spinner needs to do nothing for this static site)"
+# we don't need a spinner for a static site, but this is here
+# a) as a future reference and b) to follow capistrano's
+# default expectations
+
+#
+# #{deploy_to}/current/script/process/spawner \
+#   mongrel \
+#   --environment=production \
+#   --instances=1 \
+#   --address=127.0.0.1 \
+#   --port=#{port}
